@@ -4,7 +4,7 @@ import Transaction from "./Transaction";
 const TransactionsList = (props) => {
 
   const allTrans = props.transactions.map((trans ,index) => {
-    return (<Transaction key={index} transaction={trans} />)
+    return (<Transaction key={index} transaction={trans} deleteTrans = {props.deleteTrans} />)
 
   })
   return (
