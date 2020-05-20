@@ -2,13 +2,16 @@ import React from "react"
 
 const Transaction = (props) => {
   let { date, description, category, amount } = props.transaction
+
   let handleDelete = event => {
+    event.preventDefault()
+    
     fetch(`http://localhost:6001/transactions/${props.transaction.id}`, {
       method: "DELETE"
     })
     .then(r => r.json())
     .then((oldTransaction) =>
-      props.deleteTransaction(oldTransaction),
+      props.deleteTransaction(oldTransaction.id),
       console.log("Successfully deleted!")
     )
   }

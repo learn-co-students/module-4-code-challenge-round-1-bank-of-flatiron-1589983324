@@ -79,10 +79,10 @@ class AccountContainer extends Component {
     })
   }
 
-  deleteTransaction = oldTransaction => {
+  deleteTransaction = (id) => {
     let { transactions } = this.state
     let copyArr = transactions.filter((transaction) =>
-      transaction !== oldTransaction
+      transaction.id !== id
     )
 
     this.setState({
