@@ -31,7 +31,9 @@ class AddTransactionForm extends Component {
       })
     })
     .then(r => r.json())
-    .then(console.log)
+    .then((newTransaction) => 
+      this.props.addTransaction(newTransaction)  
+    )
   }
 
   render() {
