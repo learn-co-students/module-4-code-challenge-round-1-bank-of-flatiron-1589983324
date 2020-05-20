@@ -7,6 +7,7 @@ const TransactionsList = (props) => {
     return <Transaction 
       key={transObj.id}
       transObj={transObj}
+      handleDelete={props.handleDelete}
     />
   })
 

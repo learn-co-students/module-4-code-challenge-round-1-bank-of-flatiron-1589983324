@@ -46,7 +46,7 @@ These deliverables are not required to pass the code challenge, but if you have 
 As a user, I should be able to:
 
 - Sort transactions alphabetically by category or description.
-- Delete a transaction which will remove it from the table and delete it from the backend.
+<!-- - Delete a transaction which will remove it from the table and delete it from the backend. -->
 
 ## Rubric
 
