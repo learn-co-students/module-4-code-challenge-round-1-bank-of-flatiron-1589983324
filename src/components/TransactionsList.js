@@ -7,9 +7,10 @@ const TransactionsList = (props) => {
     return <Transaction 
       transaction={singleTransaction}
       key={singleTransaction.id}
+      deleteATransaction={props.deleteATransaction}
     />
   })
-  
+
   console.log(props)
 
   return (

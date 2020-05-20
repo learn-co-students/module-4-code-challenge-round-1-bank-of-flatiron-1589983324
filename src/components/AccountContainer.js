@@ -50,6 +50,21 @@ class AccountContainer extends Component {
       })
   }
 
+  deleteATransaction = (id) => {
+    fetch(`http://localhost:6001/transactions/${id}`, {
+      method: "DELETE"
+    })
+      .then(response => response.json())
+      .then((deletedTransaction) => {
+        let newListOfTransactions = this.state.allTransactions.filter((singleTransaction) => {
+          return singleTransaction.id !== id
+        })
+        this.setState({
+          allTransactions: newListOfTransactions
+        })
+      })
+  }
+
   render() {
     console.log(this.state)
     let sortedTransactions = this.decideWhatArrayToRender()
@@ -65,6 +80,7 @@ class AccountContainer extends Component {
         />
         <TransactionsList 
           transactions={this.decideWhatArrayToRender()}
+          deleteATransaction={this.deleteATransaction}
         />
       </div>
     );
