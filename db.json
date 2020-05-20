@@ -83,6 +83,97 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2020-04-28",
+      "description": "jmijj",
+      "category": "jijji",
+      "amount": "-0.01",
+      "id": 13
+    },
+    {
+      "date": "2020-05-14",
+      "description": "koko",
+      "category": "okko",
+      "amount": "0.01",
+      "id": 14
+    },
+    {
+      "date": "",
+      "description": "jij",
+      "category": "ij",
+      "amount": "0.02",
+      "id": 15
+    },
+    {
+      "date": "",
+      "description": "kj",
+      "category": "",
+      "amount": "",
+      "id": 16
+    },
+    {
+      "date": "",
+      "description": "oko",
+      "category": "",
+      "amount": "",
+      "id": 17
+    },
+    {
+      "date": "",
+      "description": "okoko",
+      "category": "",
+      "amount": "",
+      "id": 18
+    },
+    {
+      "date": "",
+      "description": "okoko",
+      "category": "kok",
+      "amount": "-0.03",
+      "id": 19
+    },
+    {
+      "date": "2020-05-08",
+      "description": "kolkok",
+      "category": "ok",
+      "amount": "0.01",
+      "id": 20
+    },
+    {
+      "date": "2020-05-22",
+      "description": "okok",
+      "category": "okoko",
+      "amount": "-0.01",
+      "id": 21
+    },
+    {
+      "date": "",
+      "description": "o",
+      "category": "",
+      "amount": "",
+      "id": 22
+    },
+    {
+      "date": "",
+      "description": "ppo",
+      "category": "",
+      "amount": "",
+      "id": 23
+    },
+    {
+      "date": "",
+      "description": "o",
+      "category": "",
+      "amount": "",
+      "id": 24
+    },
+    {
+      "date": "",
+      "description": "okkk",
+      "category": "",
+      "amount": "",
+      "id": 25
     }
   ]
 }
