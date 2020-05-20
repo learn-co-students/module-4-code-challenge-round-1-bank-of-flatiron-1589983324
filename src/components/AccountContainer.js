@@ -42,6 +42,17 @@ class AccountContainer extends Component {
     })
   }
 
+  deleteTransaction = oldTransaction => {
+    let { transactions } = this.state
+    let copyArr = transactions.filter((transaction) =>
+      transaction !== oldTransaction
+    )
+
+    this.setState({
+      transactions: copyArr
+    })
+  }
+
   render() {
     console.log(this.state.searchTerm)
 
@@ -49,7 +60,7 @@ class AccountContainer extends Component {
       <div>
         <Search searchTerm = { this.state.searchTerm } handleChange = {this.handleChange} />
         <AddTransactionForm addTransaction = {this.addTransaction} />
-        <TransactionsList transactions = {this.pickTransactions()} />
+        <TransactionsList transactions = {this.pickTransactions()} deleteTransaction = { this.deleteTransaction } />
       </div>
     );
   }
