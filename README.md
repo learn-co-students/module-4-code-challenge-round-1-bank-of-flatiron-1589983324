@@ -1,16 +1,3 @@
-## Core Deliverables
-
-✅ - See a table of the transactions.
-✅ - Fill out and submit the form to add a new transaction. This should add a the new transaction to the table **as well as post the new transaction to the backend API for persistence**.
-✅ - Filter transactions by typing into the search bar. Only transactions with a description matching the search term should be shown in the transactions table.
-
-## Stretch Deliverables
-
-✅ - Sort transactions alphabetically by category or description.
-- Delete a transaction which will remove it from the table and delete it from the backend.
-
-<!-- ******************************************************************* -->
-
 # Bank of Flatiron
 
 Welcome to the Bank of Flatiron, where you can trust us with all your financial data! Use the below gif as an example of how the app should function.
