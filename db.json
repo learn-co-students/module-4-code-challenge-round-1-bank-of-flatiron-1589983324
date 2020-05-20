@@ -83,6 +83,34 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2020-05-20",
+      "description": "Jadon Sancho will come to chelsea",
+      "category": "Food",
+      "amount": "20.00",
+      "id": 13
+    },
+    {
+      "date": "2020-05-13",
+      "description": "Very Good ",
+      "category": "Food",
+      "amount": "20",
+      "id": 14
+    },
+    {
+      "date": "2020-05-20",
+      "description": "McDonalds",
+      "category": "Food",
+      "amount": "100",
+      "id": 15
+    },
+    {
+      "date": "2020-05-20",
+      "description": "Chelsea Shirt",
+      "category": "Chelsea",
+      "amount": "2.00",
+      "id": 16
     }
   ]
 }
