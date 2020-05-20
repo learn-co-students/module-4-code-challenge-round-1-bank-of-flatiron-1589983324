@@ -43,20 +43,47 @@ class AccountContainer extends Component {
     this.setState({
       searchTerm: event.target.value
     })
+    this.transactionsFiltered()
   }
 
   transactionsFiltered = () => {
     const searchTerm = this.state.searchTerm
-    const filteredTransactions = this.state.transactions.filter(t => t.description.includes(searchTerm))
-    return filteredTransactions
+    const filteredTransactions = this.state.transactions.filter(t => t.description.toUpperCase().includes(searchTerm.toUpperCase()))
+    return filteredTransactions.sort(function(a, b) {
+      var descriptionA = a.description.toUpperCase()
+      var descriptionB = b.description.toUpperCase()
+      if (descriptionA < descriptionB) {
+        return -1
+      }
+      if (descriptionA > descriptionB) {
+        return 1
+      }
+      return 0
+    })
   }
+
+  deleteTransaction = (transaction) => {
+    console.log("DELETE", transaction)
+    fetch(`http://localhost:6001/transactions/${transaction.id}`, {
+      method: "DELETE"
+    })
+    .then(r => r.json())
+    .then(
+      console.log("Deleted Transaction")
+    )
+    const deleted = this.state.transactions.filter((t => t.id !== transaction.id))
+    this.setState({
+      transactions: deleted
+    })
+  }
+
 
   render() {
     return (
       <div>
         <Search handleSearchTerm={ this.setSearchTerm } />
         <AddTransactionForm makeTransaction={ this.makeTransaction } />
-        <TransactionsList transactions={ this.transactionsFiltered() } />
+        <TransactionsList transactions={ this.transactionsFiltered() } handleDoubleClick= { this.deleteTransaction }/>
       </div>
     );
   }

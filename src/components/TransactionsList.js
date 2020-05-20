@@ -4,7 +4,7 @@ import Transaction from "./Transaction";
 const TransactionsList = (props) => {
   console.log("HEREEE", props.transactions)
   const transactions = props.transactions.map(transaction => {
-  return <Transaction transaction={ transaction } key={ transaction.id }/>
+  return <Transaction transaction={ transaction } key={ transaction.id } handleDoubleClick={ props.handleDoubleClick} />
   })
 
   return (

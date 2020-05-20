@@ -5,7 +5,7 @@ const Transaction = (props) => {
   const {date, description, category, amount} = props.transaction
 
   return (
-    <tr>
+    <tr onDoubleClick={ () => props.handleDoubleClick( props.transaction) }>
       <td>{ date }</td>
       <td>{ description }</td>
       <td>{ category }</td>
