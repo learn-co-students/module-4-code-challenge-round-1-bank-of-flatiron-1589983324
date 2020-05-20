@@ -83,6 +83,27 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2020-04-26",
+      "description": "Wine, Drizly's",
+      "category": "Food/Beverage",
+      "amount": "20",
+      "id": 13
+    },
+    {
+      "date": "2020-01-19",
+      "description": "Plane Ticket, JetBlue",
+      "category": "Travel",
+      "amount": "250",
+      "id": 14
+    },
+    {
+      "date": "2020-02-19",
+      "description": "Sunscreen, CVS",
+      "category": "Skincare",
+      "amount": "8",
+      "id": 15
     }
   ]
 }
