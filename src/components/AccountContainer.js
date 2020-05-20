@@ -27,7 +27,12 @@ class AccountContainer extends Component {
 
   pickTransactions = () => {
     let { transactions, searchTerm } = this.state
-    
+    let newArr = transactions
+
+    newArr = transactions.filter((transaction) =>
+      transaction.description.includes(searchTerm)
+    )
+    return newArr
   }
 
   render() {
@@ -37,7 +42,8 @@ class AccountContainer extends Component {
       <div>
         <Search searchTerm = { this.state.searchTerm } handleChange = {this.handleChange} />
         <AddTransactionForm />
-        <TransactionsList transactions = {this.state.transactions} />
+        <TransactionsList transactions = {this.pickTransactions()} />
+        {/* <TransactionsList transactions = {this.state.transactions} /> */}
       </div>
     );
   }
