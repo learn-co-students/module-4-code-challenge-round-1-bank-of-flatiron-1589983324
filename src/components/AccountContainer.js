@@ -50,7 +50,6 @@ class AccountContainer extends Component {
         <Search searchTerm = { this.state.searchTerm } handleChange = {this.handleChange} />
         <AddTransactionForm addTransaction = {this.addTransaction} />
         <TransactionsList transactions = {this.pickTransactions()} />
-        {/* <TransactionsList transactions = {this.state.transactions} /> */}
       </div>
     );
   }
