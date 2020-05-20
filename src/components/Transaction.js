@@ -1,12 +1,15 @@
 import React from "react";
 
-const Transaction = () => {
+const Transaction = (props) => {
+  let {id, date, description, category, amount} = props.transaction
+  let {remove} = props
   return (
     <tr>
-      <td>{"your code here..."}</td>
-      <td>{"your code here..."}</td>
-      <td>{"your code here..."}</td>
-      <td>{"your code here..."}</td>
+      <td>{date}</td>
+      <td>{description}</td>
+      <td>{category}</td>
+      <td>{amount}</td>
+      <td><button value={id} onClick={(e) => remove(e)}>⨉</button></td>
     </tr>
   );
 };
