@@ -83,6 +83,20 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "1996-08-02",
+      "description": "birthday",
+      "category": "lose money",
+      "amount": "-11.50",
+      "id": 13
+    },
+    {
+      "date": "2020-05-05",
+      "description": "testing form",
+      "category": "test",
+      "amount": "0.01",
+      "id": 14
     }
   ]
 }
