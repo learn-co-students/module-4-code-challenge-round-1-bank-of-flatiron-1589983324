@@ -37,17 +37,31 @@ class AccountContainer extends Component {
     if (selectValue === "default") {
       newArr = transactions
     } else if (selectValue === "category") {
-      newArr = transactions.sort(this.alphabeticalSort)
+      newArr = transactions.sort(this.categorySort)
       console.log("Sorted by category")
     } else if (selectValue === "description") {
+      newArr = transactions.sort(this.descriptionSort)
       console.log("Sorted by description")
     }
     return newArr
   }
 
-  alphabeticalSort = (a,b) => {
+  categorySort = (a,b) => {
     let valueA = a.category.toLowerCase()
     let valueB = b.category.toLowerCase()
+    if (valueA < valueB) {
+      return -1
+    }
+    if (valueA > valueB) {
+      return 1
+    }
+    return 0
+  }
+
+
+  descriptionSort = (a,b) => {
+    let valueA = a.description.toLowerCase()
+    let valueB = b.description.toLowerCase()
     if (valueA < valueB) {
       return -1
     }
