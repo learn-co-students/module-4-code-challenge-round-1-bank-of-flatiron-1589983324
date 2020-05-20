@@ -83,6 +83,13 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2019-12-17",
+      "description": "T-Mobile",
+      "category": "Phone",
+      "amount": "-116.00",
+      "id": 13
     }
   ]
 }
